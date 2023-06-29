@@ -1,6 +1,8 @@
-# Getting Started with Create React App
+# Job Search Graphing App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was built with Visx and G3 graphing software.
+
+It's a fun visualizer of metrics of the job search.
 
 ## Available Scripts
 
