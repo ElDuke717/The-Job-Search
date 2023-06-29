@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Visx Bar Graph</h1>
+        <h1>Applications, Phone and In Person Inteviews</h1>
       </header>
       <>
       <BarGraph />

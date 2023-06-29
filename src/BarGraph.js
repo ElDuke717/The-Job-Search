@@ -6,15 +6,16 @@ import { AxisLeft, AxisBottom } from '@visx/axis';
 
 // Our data...
 const data = [
-  { type: 'Apples', value: 50 },
-  { type: 'Oranges', value: 30 },
-  { type: 'Bananas', value: 10 },
+  { type: 'Applictions', value: 300 },
+  { type: 'Phone Screens', value: 25 },
+  { type: 'In-Person Interviews', value: 5 },
+  { type: 'Offers', value: 1 },
 ];
 
 // Define the graph dimensions and margins
-const width = 500;
+const width = 700;
 const height = 500;
-const margin = { top: 20, bottom: 20, left: 20, right: 20 };
+const margin = { top: 20, bottom: 50, left: 50, right: 20 };
 
 // Create scales
 const xScale = scaleBand({
@@ -41,7 +42,7 @@ export default function BarGraph() {
               y={yScale(d.value)}
               height={barHeight}
               width={xScale.bandwidth()}
-              fill="#2274A5"
+              fill="#65C89B"
             />
           );
         })}
