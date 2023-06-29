@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/ElDuke717/The-Job-Search/static/css/main.50adc441.css",
+    "main.js": "/ElDuke717/The-Job-Search/static/js/main.253e9f35.js",
+    "static/js/787.f755dfe8.chunk.js": "/ElDuke717/The-Job-Search/static/js/787.f755dfe8.chunk.js",
+    "index.html": "/ElDuke717/The-Job-Search/index.html",
+    "main.50adc441.css.map": "/ElDuke717/The-Job-Search/static/css/main.50adc441.css.map",
+    "main.253e9f35.js.map": "/ElDuke717/The-Job-Search/static/js/main.253e9f35.js.map",
+    "787.f755dfe8.chunk.js.map": "/ElDuke717/The-Job-Search/static/js/787.f755dfe8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.50adc441.css",
+    "static/js/main.253e9f35.js"
+  ]
+}
