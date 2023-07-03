@@ -6,10 +6,10 @@ import { AxisLeft, AxisBottom } from '@visx/axis';
 
 // Our data...
 const data = [
-  { type: 'Applictions', value: 300 },
-  { type: 'Phone Screens', value: 25 },
-  { type: 'In-Person Interviews', value: 5 },
-  { type: 'Offers', value: 1 },
+  { type: 'Applictions', value: 0 },
+  { type: 'Phone Screens', value: 0 },
+  { type: 'In-Person Interviews', value: 0 },
+  { type: 'Offers', value: 0 },
 ];
 
 // Define the graph dimensions and margins
