@@ -6,7 +6,7 @@ import { AxisLeft, AxisBottom } from '@visx/axis';
 
 // Our data...
 const data = [
-  { type: 'Applictions', value: 0 },
+  { type: 'Applictions', value: 5 },
   { type: 'Phone Screens', value: 0 },
   { type: 'In-Person Interviews', value: 0 },
   { type: 'Offers', value: 0 },
