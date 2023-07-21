@@ -6,7 +6,7 @@ import { AxisLeft, AxisBottom } from '@visx/axis';
 
 // Our data...
 const data = [
-  { type: 'Applictions', value: 5 },
+  { type: 'Applictions', value: 6 },
   { type: 'Phone Screens', value: 0 },
   { type: 'In-Person Interviews', value: 0 },
   { type: 'Offers', value: 0 },
@@ -29,8 +29,14 @@ const yScale = scaleLinear({
   range: [height - margin.bottom, margin.top],
 });
 
+// Customize y-axis ticks to whole numbers
+const yAxisTicks = yScale.ticks().filter((tick) => Number.isInteger(tick));
+
+
 export default function BarGraph() {
   return (
+    <><h1>Applications, Phone and In Person Inteviews</h1>
+    <h2>Use this section to keep track of your activities</h2>
     <svg width={width} height={height}>
       <Group>
         {data.map((d) => {
@@ -42,14 +48,22 @@ export default function BarGraph() {
               y={yScale(d.value)}
               height={barHeight}
               width={xScale.bandwidth()}
-              fill="#65C89B"
-            />
+              fill="#65C89B" />
           );
         })}
-        <AxisLeft scale={yScale} left={margin.left} />
-        <AxisBottom scale={xScale} top={height - margin.bottom} />
+        <AxisLeft scale={yScale} left={margin.left} tickValues={yAxisTicks} />
+        <AxisBottom
+            scale={xScale}
+            top={height - margin.bottom}
+            tickLabelProps={() => ({
+              fontSize: 12, // Set your desired font size here
+              textAnchor: 'middle', // Center the tick labels
+            })}
+          />
       </Group>
     </svg>
+    <h3>Follow the Codesmith Application Process to get 20% conversion from application to phone screen.</h3>
+    </>
   );
 }
 

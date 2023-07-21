@@ -1,19 +1,30 @@
 import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import BarGraph from './BarGraph.js';
+import PieChart from './PieChart.js';
 import Footer from './Footer';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Applications, Phone and In Person Inteviews</h1>
+        <h1>The Job Hunt</h1>
+        <div className='link-container'>
+        <a className='link' href="/">Bar Graph</a>
+        <a className='link' href="/pie-chart">Pie Chart</a>
+        </div>
       </header>
-      <>
-      <BarGraph />
+      <Router>
+        <Routes>
+          <Route path="/" element={<BarGraph />} />
+          <Route path="/pie-chart" element={<PieChart />} />
+        </Routes>
+      </Router>
       <Footer />
-      </>
     </div>
+    
   );
 }
 
 export default App;
+
