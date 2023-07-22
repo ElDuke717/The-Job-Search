@@ -1,5 +1,7 @@
 # Job Search Graphing App
 
+![The Job Search](public/The%20Job%20Search.png)
+
 This project was built with Visx and G3 graphing libraries and React. It's a fun visualizer of metrics of the job search.
 
 ## Demo

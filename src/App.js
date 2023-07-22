@@ -8,10 +8,10 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>The Job Hunt</h1>
+        <h1>The Job Search</h1>
         <div className='link-container'>
         <a className='link' href="/">Bar Graph</a>
-        <a className='link' href="/pie-chart">Where to Apply</a>
+        <a className='link' href="/targets">Where to Apply</a>
         </div>
       </header>
       <Router>

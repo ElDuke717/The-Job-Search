@@ -28,7 +28,7 @@ export default function PieChartView() {
   return (
     <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
       <h1>Application Method Breakdown</h1>
-      <h3>The breakdown of job getting methods per Codesmith 2021 data</h3>
+      <h3>Grads have had success with these sites and methods.</h3>
       <svg width={400} height={400}>
         {/* Apply a transform to center the pie chart */}
         <g transform={`translate(${centerX}, ${centerY})`}>
