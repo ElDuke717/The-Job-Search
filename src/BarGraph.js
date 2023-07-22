@@ -6,7 +6,7 @@ import { AxisLeft, AxisBottom } from '@visx/axis';
 
 // Our data...
 const data = [
-  { type: 'Applictions', value: 6 },
+  { type: 'Applications', value: 6 },
   { type: 'Phone Screens', value: 0 },
   { type: 'In-Person Interviews', value: 0 },
   { type: 'Offers', value: 0 },
@@ -31,9 +31,15 @@ const yScale = scaleLinear({
 
 // Customize y-axis ticks to whole numbers
 const yAxisTicks = yScale.ticks().filter((tick) => Number.isInteger(tick));
-
+// To get the value for a specific type, e.g., 'Applications'
+// calcs to get rate of phone screens from applications
+const typeToFind = 'Applications';
+const applicationValue = data.find((item) => item.type === typeToFind)?.value;
+const screens = Math.floor(applicationValue * 0.2);
 
 export default function BarGraph() {
+
+
   return (
     <><h1>Applications, Phone and In Person Inteviews</h1>
     <h2>Use this section to keep track of your activities</h2>
@@ -62,7 +68,8 @@ export default function BarGraph() {
           />
       </Group>
     </svg>
-    <h3>Follow the Codesmith Application Process to get 20% conversion from application to phone screen.</h3>
+    <h3>Target 20% conversion from application full CS style application to phone screen.</h3>
+    <h3>You could possibly get {screens} phone {screens > 1 ? 'screens' : 'screen'} with your current rate of applications.</h3>
     </>
   );
 }

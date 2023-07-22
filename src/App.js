@@ -11,13 +11,13 @@ function App() {
         <h1>The Job Hunt</h1>
         <div className='link-container'>
         <a className='link' href="/">Bar Graph</a>
-        <a className='link' href="/pie-chart">Pie Chart</a>
+        <a className='link' href="/pie-chart">Where to Apply</a>
         </div>
       </header>
       <Router>
         <Routes>
           <Route path="/" element={<BarGraph />} />
-          <Route path="/pie-chart" element={<PieChart />} />
+          <Route path="/targets" element={<PieChart />} />
         </Routes>
       </Router>
       <Footer />
