@@ -22,7 +22,7 @@ function ApplicationForm({ onSubmit }) {
 
   return (
     <div>
-      <h1>Application Form</h1>
+      <h1>Enter Job Search Data Here</h1>
       <form className="application-form" onSubmit={handleFormSubmit}>
         <div>
           <label>Applications:</label>
