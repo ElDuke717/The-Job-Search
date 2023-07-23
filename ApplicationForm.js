@@ -23,7 +23,7 @@ function ApplicationForm({ onSubmit }) {
   return (
     <div>
       <h1>Application Form</h1>
-      <form className="application-form" onSubmit={handleFormSubmit}>
+      <form onSubmit={handleFormSubmit}>
         <div>
           <label>Applications:</label>
           <input type="number" name="applications" />
@@ -39,10 +39,6 @@ function ApplicationForm({ onSubmit }) {
         <div>
           <label>Offers:</label>
           <input type="number" name="offers" />
-        </div>
-        <div>
-          <label>Rejections:</label>
-          <input type="number" name="rejections" />
         </div>
         <button type="submit">Submit</button>
       </form>

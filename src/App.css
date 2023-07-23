@@ -33,6 +33,65 @@
   margin: 10px 20px;
   text-decoration: none;
 }
+/* Reset default form styles */
+.application-form {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Style form container */
+.application-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+/* Style form headings */
+.application-form h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Style form labels */
+.application-form label {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+/* Style form input fields */
+.application-form input {
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+/* Style form submit button */
+.application-form button {
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Style form submit button on hover */
+.application-form button:hover {
+  background-color: #0056b3;
+}
+
 
 @keyframes App-logo-spin {
   from {
