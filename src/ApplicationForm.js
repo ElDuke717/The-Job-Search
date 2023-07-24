@@ -26,23 +26,23 @@ function ApplicationForm({ onSubmit }) {
       <form className="application-form" onSubmit={handleFormSubmit}>
         <div>
           <label>Applications:</label>
-          <input type="number" name="applications" />
+          <input type="number" className="entry" name="applications" />
         </div>
         <div>
           <label>Phone Screens:</label>
-          <input type="number" name="phoneScreens" />
+          <input type="number" className="entry" name="phoneScreens" />
         </div>
         <div>
           <label>In-Person Interviews:</label>
-          <input type="number" name="inPersonInterviews" />
+          <input type="number" className="entry" name="inPersonInterviews" />
         </div>
         <div>
           <label>Offers:</label>
-          <input type="number" name="offers" />
+          <input type="number" className="entry" name="offers" />
         </div>
         <div>
           <label>Rejections:</label>
-          <input type="number" name="rejections" />
+          <input type="number" className="entry" name="rejections" />
         </div>
         <button type="submit">Submit</button>
       </form>
