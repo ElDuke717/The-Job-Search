@@ -1,12 +1,8 @@
 import React, { useState } from 'react';
+import { useFormData } from './.FormDataContext';
 
-function ApplicationForm({ onSubmit }) {
-  const [formData, setFormData] = useState({
-    applications: 0,
-    phoneScreens: 0,
-    inPersonInterviews: 0,
-    offers: 0,
-  });
+function ApplicationForm() {
+  const [formData, setFormData] = useFormData();
 
   const handleFormSubmit = (event) => {
     event.preventDefault();
@@ -17,14 +13,13 @@ function ApplicationForm({ onSubmit }) {
       offers: parseInt(event.target.elements.offers.value),
     };
     setFormData(newFormData);
-    onSubmit(newFormData);
   };
 
   return (
     <div>
       <h1>Enter Job Search Data Here</h1>
       <form className="application-form" onSubmit={handleFormSubmit}>
-        <div>
+      <div>
           <label>Applications:</label>
           <input type="number" className="entry" name="applications" />
         </div>
@@ -51,3 +46,4 @@ function ApplicationForm({ onSubmit }) {
 }
 
 export default ApplicationForm;
+
