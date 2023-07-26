@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import { useFormData } from './.FormDataContext';
+import { useFormData } from './FormDataContext';
 
 function ApplicationForm() {
-  const [formData, setFormData] = useFormData();
+  const { formData, setFormData } = useFormData();
 
   const handleFormSubmit = (event) => {
     event.preventDefault();
@@ -11,11 +11,11 @@ function ApplicationForm() {
       phoneScreens: parseInt(event.target.elements.phoneScreens.value),
       inPersonInterviews: parseInt(event.target.elements.inPersonInterviews.value),
       offers: parseInt(event.target.elements.offers.value),
-      rejections: parseInt(event.target.elements.rejections.value)
+      rejections: parseInt(event.target.elements.rejections.value),
     };
-    console.log(newFormData);
     setFormData(newFormData);
   };
+
   
   return (
     <div>
