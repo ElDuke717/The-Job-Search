@@ -11,10 +11,12 @@ function ApplicationForm() {
       phoneScreens: parseInt(event.target.elements.phoneScreens.value),
       inPersonInterviews: parseInt(event.target.elements.inPersonInterviews.value),
       offers: parseInt(event.target.elements.offers.value),
+      rejections: parseInt(event.target.elements.rejections.value)
     };
+    console.log(newFormData);
     setFormData(newFormData);
   };
-
+  
   return (
     <div>
       <h1>Enter Job Search Data Here</h1>
