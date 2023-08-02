@@ -8,7 +8,7 @@ import { AxisLeft, AxisBottom } from '@visx/axis';
 const data = [
   { type: 'Applications', value: 22 },
   { type: 'E-mail', value: 2 },
-  { type: 'Phone Screens', value: 0 },
+  { type: 'Phone Screens', value: 1 },
   { type: 'Interviews', value: 0 },
   { type: 'Rejections', value: 6 },
   { type: 'Acceptances', value: 0 },
